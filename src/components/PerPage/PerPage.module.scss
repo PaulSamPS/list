@@ -1,0 +1,94 @@
+.totalPages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--gray);
+	border-radius: 10px;
+
+	font-size: 14px;
+
+	.currentPageTotal {
+		width: 50px;
+		margin-right: 5px;
+	}
+
+	span {
+		width: 80px;
+
+		text-align: center;
+	}
+
+	.pageNumberTotal {
+		margin-left: 5px;
+	}
+
+	.activeLabelBlock {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 80px;
+		height: 25px;
+
+		cursor: pointer;
+
+		color: var(--gray);
+		border-radius: 10px;
+		background-color: var(--white);
+		box-shadow: 0 0 8px 0 rgb(34 60 80 / 20%);
+
+		.arrowDown {
+			position: absolute;
+			top: 6px;
+			right: 12px;
+
+			transform: rotate(90deg);
+		}
+	}
+}
+
+.setPerPageBlock {
+	position: absolute;
+	right: 0;
+	bottom: 27px;
+
+	width: 80px;
+	margin: 0;
+	padding: 10px 0;
+
+	text-align: center;
+
+	color: var(--gray);
+	border-radius: 10px;
+	background-color: var(--white);
+	box-shadow: 0 0 8px 0 rgb(34 60 80 / 20%);
+
+	font-size: 14px;
+
+	.setPerPageItem {
+		margin-bottom: 10px;
+		padding: 0 10px;
+
+		list-style-type: none;
+
+		cursor: pointer;
+		transition: all ease 0.2s;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			color: var(--white);
+			background: var(--gray);
+		}
+	}
+}
+
+.setPerPageActive {
+	color: var(--white);
+	background: var(--gray);
+}

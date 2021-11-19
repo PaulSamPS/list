@@ -1,0 +1,79 @@
+.detailsWrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px;
+
+	.detailsBlock {
+		padding: 20px;
+
+		color: var(--black);
+		border-radius: 10px;
+		background: var(--white);
+		box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
+		h3 {
+			color: var(--gray);
+		}
+
+		h5 {
+			color: var(--gray);
+		}
+
+		.statusBlock {
+			margin-top: 10px;
+		}
+
+		.status {
+			width: 120px;
+			height: 30px;
+
+			cursor: pointer;
+
+			color: var(--white);
+			border: none;
+			border-radius: 30px;
+			box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
+			font-weight: 700;
+		}
+
+		.statusBlue {
+			background-color: var(--statusBlue);
+		}
+
+		.statusOrange {
+			background-color: var(--statusOrange);
+		}
+
+		.statusRed {
+			background-color: var(--statusRed);
+		}
+
+		.statusGreen {
+			background-color: var(--statusGreen);
+		}
+
+		.statusBlack {
+			background-color: var(--black);
+		}
+
+		.backBtn {
+			width: 100px;
+			height: 25px;
+			margin-top: 30px;
+
+			cursor: pointer;
+			transition: all ease 0.2s;
+
+			color: white;
+			border: 0;
+			border-radius: 10px;
+			background: var(--gray);
+			box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
+			&:hover {
+				background: var(--black);
+			}
+		}
+	}
+}

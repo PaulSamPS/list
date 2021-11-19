@@ -1,0 +1,47 @@
+.gridHeader {
+	display: grid;
+
+	margin-bottom: 10px;
+	padding: 20px;
+
+	white-space: nowrap;
+
+	color: var(--gray);
+	border-radius: 10px;
+	background-color: var(--white);
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+	grid-template-columns: repeat(4, 1fr);
+
+	span {
+		overflow: hidden;
+
+		text-overflow: ellipsis;
+
+		&:last-child {
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 1300px) {
+		grid-template-columns: 150px 1fr 1fr 120px;
+		gap: 10px;
+	}
+
+	@media screen and (max-width: 680px) {
+		grid-template-columns: 1fr 1fr;
+
+		span {
+			margin-bottom: 0;
+
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+
+		span {
+			&:last-child {
+				text-align: start;
+			}
+		}
+	}
+}

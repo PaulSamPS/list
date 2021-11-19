@@ -1,0 +1,246 @@
+.gridBlock {
+	position: relative;
+
+	display: grid;
+	align-items: center;
+
+	margin-bottom: 10px;
+	padding: 20px;
+
+	border-radius: 10px;
+	background-color: var(--white);
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+	grid-template-columns: repeat(4, 1fr);
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.date {
+		display: block;
+
+		width: 120px;
+
+		white-space: nowrap;
+
+		p {
+			color: var(--gray);
+
+			font-size: 13px;
+		}
+
+		a {
+			text-decoration: none;
+
+			color: var(--black);
+
+			&:hover {
+				color: var(--statusRed);
+			}
+		}
+
+		.number {
+			cursor: pointer;
+			transition: all ease 0.2s;
+		}
+	}
+
+	.orderType {
+		display: block;
+
+		padding: 10px 0;
+
+		white-space: nowrap;
+
+		p {
+			color: var(--gray);
+
+			font-size: 13px;
+		}
+	}
+
+	.account {
+		display: block;
+
+		white-space: nowrap;
+
+		p {
+			color: var(--gray);
+
+			font-size: 13px;
+		}
+	}
+
+	.statusBlock {
+		display: grid;
+		justify-items: center;
+	}
+
+	.status {
+		width: 120px;
+		height: 30px;
+
+		color: var(--white);
+		border: none;
+		border-radius: 30px;
+		box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
+		font-weight: 700;
+	}
+
+	.statusBlue {
+		background-color: var(--statusBlue);
+	}
+
+	.statusOrange {
+		background-color: var(--statusOrange);
+	}
+
+	.statusRed {
+		background-color: var(--statusRed);
+	}
+
+	.statusGreen {
+		background-color: var(--statusGreen);
+	}
+
+	.statusBlack {
+		background-color: var(--black);
+	}
+
+	@media screen and (max-width: 1300px) {
+		grid-template-columns: 150px 1fr 1fr 120px;
+		gap: 10px;
+	}
+
+	@media screen and (max-width: 950px) {
+		.orderType {
+			overflow: hidden;
+
+			width: 200px;
+
+			text-overflow: ellipsis;
+
+			span {
+
+			}
+
+			p {
+				overflow: hidden;
+
+				width: 200px;
+
+				text-overflow: ellipsis;
+			}
+		}
+
+		.account {
+			overflow: hidden;
+
+			width: 200px;
+
+			text-overflow: ellipsis;
+
+			p {
+				overflow: hidden;
+
+				text-overflow: ellipsis;
+			}
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.orderType {
+			width: 150px;
+
+			p {
+				width: 150px;
+			}
+		}
+
+		.account {
+			width: 150px;
+		}
+	}
+
+	@media screen and (max-width: 680px) {
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+
+		p {
+			margin: 0;
+			margin-top: 10px;
+		}
+
+		.statusBlock {
+			justify-items: start;
+		}
+
+		.orderType {
+			width: 200px;
+
+			p {
+				width: 200px;
+			}
+		}
+
+		.account {
+			width: 200px;
+
+			.terminalName {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.orderType {
+			width: 150px;
+
+			p {
+				width: 150px;
+			}
+		}
+
+		.account {
+			width: 150px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.orderType {
+			width: 120px;
+
+			p {
+				width: 120px;
+			}
+		}
+
+		.account {
+			width: 120px;
+
+			p {
+				width: 120px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 340px) {
+		.orderType {
+			width: 90px;
+
+			p {
+				width: 90px;
+			}
+		}
+
+		.account {
+			width: 90px;
+
+			.terminalName {
+				width: 90px;
+			}
+		}
+	}
+}

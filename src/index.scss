@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+
+	background-color: #E5E5E5;
+
+	font-family: "IBM Plex Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+	--gray: #999;
+	--black: #262020;
+	--white: #FFF;
+	--statusBlue: #039;
+	--statusOrange: #F90;
+	--statusRed: #C03;
+	--statusGreen: #063;
+	--statusBlack: #333;
+}

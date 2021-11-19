@@ -9,7 +9,7 @@ In the project directory, you can run:
 First
 ### `npm run server`
 
-Runs the server.
+Runs the server at port 3001.
 
 Second
 ### `npm start`

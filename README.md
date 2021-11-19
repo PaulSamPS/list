@@ -1,6 +1,6 @@
 # Getting Started with Create React Main
 
-Demo this project [Demo](https://list-task-test-app.herokuapp.com/).
+Demo this project from PC [Demo](https://list-task-test-app.herokuapp.com/).
 
 ## Available Scripts
 

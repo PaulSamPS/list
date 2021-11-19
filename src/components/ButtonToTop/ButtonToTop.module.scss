@@ -24,6 +24,11 @@
 
 	@media screen and(max-width: 500px) {
 		right: 30px;
+		bottom: 18px;
+	}
+
+	@media screen and(max-width: 340px) {
+		right: 30px;
 		bottom: 8px;
 	}
 }

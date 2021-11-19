@@ -1,4 +1,4 @@
-# Getting Started with Create React Main
+# Getting Started with Project
 
 To view demo this project from PC click [Demo](https://list-task-test-app.herokuapp.com/).
 

@@ -1,13 +1,10 @@
-# Getting Started with Create React Main
-
-To view demo this project from PC click [Demo](https://list-task-test-app.herokuapp.com/).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 First
-### `npm run server`
+### `npm run json-server`
 
 Runs the server at port 3001.
 

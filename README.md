@@ -9,8 +9,7 @@ In the project directory, you can run:
 First
 ### `npm run server`
 
-Runs the server in the development mode.\
-Open [http://localhost:3001/list](http://localhost:3000/list) to view it in the browser.
+Runs the server.
 
 Second
 ### `npm start`

@@ -48,19 +48,21 @@ export const PerPage = (): JSX.Element => {
     return (
         <div className={styles.totalPages} >
             <span className={styles.currentPageTotal}>{currentPage} / {pagesCount}</span>
-            <div className={styles.activeLabelBlock} onClick={() => setActiveModal(!activeModal)} ref={modalRef}>
-                <span className={styles.activeLabel}>{activeLabel}</span>
-                <Arrow className={styles.arrowDown}/>
-                {activeModal &&
-                <ul className={styles.setPerPageBlock}>
-                    {setListPerPage.map((p, index) =>
-                        <li key={p} className={cn(styles.setPerPageItem, {
-                            [styles.setPerPageActive]: active === index
-                        })} onClick={() => setPerPageCount(index)}>
-                            {p}
-                        </li>)}
-                </ul>}
-            </div>
+            {pagesCount > 1 ?
+                <div className={styles.activeLabelBlock} onClick={() => setActiveModal(!activeModal)} ref={modalRef}>
+                    <span className={styles.activeLabel}>{activeLabel}</span>
+                    <Arrow className={styles.arrowDown}/>
+                    {activeModal &&
+                    <ul className={styles.setPerPageBlock}>
+                        {setListPerPage.map((p, index) =>
+                            <li key={p} className={cn(styles.setPerPageItem, {
+                                [styles.setPerPageActive]: active === index
+                            })} onClick={() => setPerPageCount(index)}>
+                                {p}
+                            </li>)}
+                    </ul>}
+                </div> : ''
+            }
         </div>
     )
 }

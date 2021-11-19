@@ -12,7 +12,7 @@ import {
 export const getDb = (search = 'a',currentPage: number, perPage: number) => {
     return async (dispatch: Dispatch) => {
         dispatch(setIsFetching(true))
-        const res = await axios.get(`http://localhost:3001/list/?account.name_like=${search}&_sort=id&_order=asc&_page=${currentPage}&_limit=${perPage}?_start=0&_end=99`)
+        const res = await axios.get(`/list/?account.name_like=${search}&_sort=id&_order=asc&_page=${currentPage}&_limit=${perPage}?_start=0&_end=99`)
         dispatch(setDb(res))
     }
 }
@@ -20,7 +20,7 @@ export const getDb = (search = 'a',currentPage: number, perPage: number) => {
 export const getDbClearInput = (currentPage: number, perPage: number) => {
     return async (dispatch: Dispatch) => {
         dispatch(setIsFetching(true))
-        const res = await axios.get(`http://localhost:3001/list/?_sort=id&_order=asc&_page=${currentPage}&_limit=${perPage}?_start=0&_end=99`)
+        const res = await axios.get(`/list/?_sort=id&_order=asc&_page=${currentPage}&_limit=${perPage}?_start=0&_end=99`)
         dispatch(setDb(res))
     }
 }
